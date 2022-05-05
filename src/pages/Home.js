@@ -1,16 +1,18 @@
 import getData from '../utils/getData';
 
-const Home =  async () => {
+const Home = async () => {
 
-    const characters = await getData();
+    const resultado = await getData();
+    console.log('resultado',resultado);
 
     const view =  `
-        <div class="Characters">
-        ${characters.results.map(character => `
-        <article class="Character-item">
-            <a href="#/${character.id}/">
-            <img src="${character.image}" alt="${character.name}">
-            <h2>${character.name}</h2>
+        <div class="Coins">
+        ${resultado.Data.map(coin => `
+        <article class="Coins-item">
+            <a href="#/${coin.id}/">
+            <img src="" alt="">
+            <h2>${coin.CoinInfo.FullName}</h2>
+            <p class="Coins-item">Cotización: Us${coin.DISPLAY.USD.PRICE}</p>
             </a>
         </article>
                 `).join('') }

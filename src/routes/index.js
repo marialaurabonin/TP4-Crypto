@@ -1,15 +1,12 @@
 import Header from '../templates/Header';
 import Home from '../pages/Home';
-import CoinInfo from '../pages/CoinInfo';
 import Error404 from '../pages/Error404'
 
 import getHash from '../utils/getHash';
 import resolveRoutes from '../utils/getResolveRoutes';
 
 const routes = {
-    '/': Home,
-    '/:id': CoinInfo,
-    '/contact':"Contact"
+     '/': Home,
 };
 
 const router = async () => {
@@ -19,7 +16,7 @@ const router = async () => {
     header.innerHTML= await Header();
     let hash = getHash();
     let route = await resolveRoutes(hash);
-    let render = routes[route] ? routes[route] : Error404;
+    let render = routes[route] ? Error404 : Home;
     content.innerHTML = await render();
 
 };
