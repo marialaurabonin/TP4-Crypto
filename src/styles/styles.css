@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,700&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #3c484e;
+  background-color: #e9de7e;
+  color: #85c9eb;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -16,7 +16,9 @@ body {
 
 .Header a {
   text-decoration: none;
-  color: #15302C;
+  color: #df631b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 55px;
 }
 
 .Main {
@@ -26,21 +28,21 @@ body {
   justify-content: center;
 }
 
-.Coins {
+.Data {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1.5rem;
   grid-row-gap: 1.5em;
   display: grid;
 }
 
-.Coins-inner {
+.Data-inner {
   grid-template-columns: 1fr 2fr;
   grid-gap: 1.5rem;
   grid-row-gap: 1.5em;
   display: grid;
 }
 
-.Coins-card {
+.Data-card {
   text-decoration: none;
   box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
   border-radius: 5px;
@@ -50,26 +52,27 @@ body {
   animation-name: fade;
 }
 
-.Coins-card img {
+.Data-card img {
   width: 100%;
   height: auto;
   border-radius: 5px 5px 0 0;
 }
-
-.Coins-card h2 {
+/*
+.Data-card h2 {
   font-size: 18px;
   font-weight: 400;
   text-align: center;
 }
 
-.Coins-card h3 {
+.Data-card h3 {
   font-size: 18px;
   font-weight: 400;
   text-align: left;
   margin: 20px;
 }
 
-.Coins-item {
+.Data-item {
+  background-color: lightsteelblue;
   text-decoration: none;
   box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
   border-radius: 5px;
@@ -79,13 +82,13 @@ body {
   animation-name: fade;
 }
 
-.Coins-item img {
+.Data-item img {
   width: 100%;
   height: auto;
   border-radius: 5px 5px 0 0;
 }
 
-.Coins-item h2 {
+.Data-item h2 {
   font-size: 18px;
   font-weight: 300;
   padding: 10px 10px;
@@ -93,7 +96,7 @@ body {
   justify-content: space-between;
 }
 
-.Coins-item p {
+.Data-item p {
   font-size: 15px;
   font-weight: 300;
   padding: 10px 10px;
@@ -101,12 +104,12 @@ body {
   justify-content: space-between;
 }
 
-.Coins-item a {
+.Data-item a {
   text-decoration: none;
   color: #026C86;
 }
-
-@keyframes fade {
+*/
+/*@keyframes fade {
   from {
     opacity: 0;
   }

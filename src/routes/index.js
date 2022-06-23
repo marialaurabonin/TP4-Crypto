@@ -5,6 +5,7 @@ import Error404 from '../pages/Error404'
 import getHash from '../utils/getHash';
 import resolveRoutes from '../utils/getResolveRoutes';
 
+
 const routes = {
      '/': Home,
 };

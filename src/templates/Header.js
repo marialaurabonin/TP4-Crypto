@@ -4,18 +4,17 @@ const Header = () => {
             <div class="Header-logo">
                 <h1 />
                     <a href="/">
-                    CryptoApp
+                   Aplicación del Clima
                     </a>  
                 </h1>
             </div>
 
-            <div class="Header-nav">
-                <a href="#/about">
-                    Nuestra entidad
-                </a>
-
-            </div>
+           
         </div>
+      
+        </a>
+
+    </div>
     `
     return view;
 };
